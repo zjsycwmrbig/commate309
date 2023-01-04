@@ -1,0 +1,101 @@
+@media (max-width: 600px) {
+  .grid-item {
+    width: 120px;
+  }
+}
+@media (max-width: 1000px) {
+  .grid-item {
+    width: 150px;
+  }
+}
+@media (max-width: 1600px) {
+  .grid-item {
+    width: 200px;
+  }
+}
+@media (max-width: 2000px) {
+  .grid-item {
+    width: 250px;
+  }
+}
+a {
+  text-decoration: none!important;
+}
+html body{
+  background-color: #ccc!important;
+}
+.demo {
+    position: relative;
+    opacity: 0;
+    transition: .2s ease;
+    margin-bottom: 60px;
+    .grid {
+        position: relative;
+        margin: 0 auto;
+        width: 98%;
+        .grid-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+             border-radius: 3px;
+             padding: 0;
+             -webkit-transition: .3s ease-in-out;
+             -o-transition: .3s ease-in-out;
+             transition: .3s ease-in-out;
+        }
+    }
+    
+}
+.mid-head {
+  text-align: center;
+}
+//对于内部链接模块的优化
+.portal-container{
+  width: 80%;
+  margin: 20px auto;
+
+  .demo{
+    margin-top: 5vw;
+    .grid{
+      .grid-item{
+        .MochiBox{
+          width: 100%;
+          margin: 0 auto;
+          .MochiContent{//大的链接
+            display:block;
+            img{
+              width: 100%;
+              margin: 0 auto;
+            }
+            h3{
+              margin: 1vw auto;
+              font-size: 1.5vw;
+              font-weight: 700;
+              font-family: Arial, Helvetica, sans-serif;
+              text-align: center;
+            }
+            .portal-introduction{
+              font-size: 0.75vw;
+              text-indent: 1vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.link-private{
+  display: block;
+  position: fixed;
+  bottom: 7.5vw;
+  right: 7.5vw;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px dotted #4e2a40;
+  padding: 0.5vw;
+  div{
+    color: #666699;
+    font-size: 3.5vw;
+    text-align: center;
+  }
+}
